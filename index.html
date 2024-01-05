@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6606919415.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="images/demo.png" class="demo">
+            <ul id="sidemenu">
+                <li><a href="#header" onclick="opentab('home')">Home</a></li>
+                <li><a href="#about" onclick="opentab('about')">About</a></li>
+                <li><a href="#services" onclick="opentab('services')">Services</a></li>
+                <li><a href="#portfolio" onclick="opentab('portfolio')">Projects</a></li>
+                <li><a href="#contact" onclick="opentab('contact')">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <!-- <p>Web Developer</p> -->
+            <h1> Hey!<br>I'm <span>Abhay</span> Kumar.</h1>         
+            <p><span class ="multiple-text"></span></p>
+        </div>
+      </div>  
+    </div>
+    <!----about----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/abhay.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A final year Information Technology student at Sikkim Manipal Institute of Technology, an efficient student committed towards quickly developing skills and acquiring new knowledge. I believe in building projects that are innovative and solve real life problems.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('positon of responsibility')">Position of Responsibility</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Frontend Web Developer(HTML, CSS, JavaScript)</li>
+                            <li><span>Coding Language</span><br>C/C++, SQL</li>
+                            <li><span>Hard Skills</span><br>UI/UX Design, Object-oriented Programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech (Information Technology)</span><br>Sikkim Manipal Institute of Technology (2020 - 2024)</li>
+                            <li><span>High School</span><br>Holy Kids International School (2020)</li>
+                            <li><span>Secondary School</span><br>Devasthaliya Vidhyapeeth (2018)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="positon of responsibility">
+                        <ul>
+                            <li><span>Student Council - 2022</span><br>IT Council Representative</li>
+                            <li><span>Innovision Club</span><br>Event Manager</li>
+                            <li><span>Kaalrav - 2022</span><br>Hospitality and Pr</li>
+                            <li><span>Tech Adrishta - 2023</span><br>Hospitality and Pr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------services----->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <!-- <p>xyz</p>
+                    <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <!-- <p>xyz</p>
+                    <a href="#">learn more</a> -->
+                </div>
+                <!-- <div>
+                    <h2>UI/UX Design</h2>
+                    <p>XYZ</p>
+                    <a href="#">learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!------- Portfolio ------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project-1.jpg">
+                    <div class="layer">
+                        <h3>Student Info App</h3>
+                        <p>This app shows all details of the Student of my College.</p>
+                        <a href="https://github.com/theabhaykumar/Student-Information-App"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project-2.jpg">
+                    <div class="layer">
+                        <h3>Quiz Web App</h3>
+                        <p>On this web app users can play quiz.</p>
+                        <a href="https://github.com/theabhaykumar/Quiz-Web-App"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project-3.jpg">
+                    <div class="layer">
+                        <h3>Currency Converter</h3>
+                        <p>This web app converts the value from one to another Currency.</p>
+                        <a href="https://github.com/theabhaykumar/Currency-converter-web-app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!---- Contact ------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i><a href="mailto:theabhaykr1@gmail.com">theabhaykr1@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i><a href="tel:+91-9801156286">+91-9801156286</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/theabhaykumar"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/abhay_etc"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/realabhaykumar"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.snapchat.com/add/abhay_etc"><i class="fa-brands fa-snapchat"></i></a>
+                    </div>
+                    <a href="images/Abhay's Resume.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with love <i class="fa-solid fa-heart"></i> by Abhay!</p>
+        </div>
+    </div>
+    
+    <!-- <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script> -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            closemenu();
+        }
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".multiple-text",{
+            strings: ["Coder","Frontend Web Developer","UI/UX designer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500,
+        })
+    </script>
+
+    <!-- <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script> -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxcCXPZ6vh6WTgKgpbRiMgXxONOfU_q_avvAaSjpOFff1H7gs7lU3rr4t3Ne0H_bc8e0w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                msg.innerHTML= "Message sent sucessfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+  
+  <script>
+    // parallax effect to header background
+    var header = document.getElementById("header");
+
+    function parallaxEffect() {
+        var scrollPosition = window.scrollY;
+        header.style.backgroundPositionY = scrollPosition * 0.5 + "px";
+    }
+
+    window.addEventListener("scroll", parallaxEffect);
+  </script>
+</body>
+</html> 
